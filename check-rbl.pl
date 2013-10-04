@@ -246,9 +246,5 @@ if($ip) {
 	print "Not a valid IP Address !\n";
 }
 
-if(!$warn) {
-	if(!$o_quiet) { print $ip->ip() ." isn't listed on any RBL !\n"; }
-}
-
 exit($warn);
 
