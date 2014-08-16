@@ -100,8 +100,6 @@ my @rbl=(
 	'query.senderbase.org',
 	'bl.emailbasura.org',
 	'combined.rbl.msrbl.net',
-	'multi.uribl.com',
-	'black.uribl.com',
 	'cblless.anti-spam.org.cn',
 	'cblplus.anti-spam.org.cn',
 	'blackholes.five-ten-sg.com',
@@ -224,7 +222,7 @@ my $warn=0;
 if($ip) {
 
 	if($ip->size() > 1) {
-	
+
 		++$ip;
 		do {
 			my $ip2 = new Net::IP($ip->ip());
